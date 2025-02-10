@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liked Items</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+        }
+        .top-bar {
+            width: 100%;
+            height: 60px;
+            background-color: #42077a;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-bottom: 2px solid white;
+        }
+        .logo {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        .top-icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-left: auto;
+            margin-right: 20px;
+        }
+        .top-icons img {
+            width: 24px;
+            height: 24px;
+        }
+        .sell-button {
+            background-color: white;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            margin-right:20px;
+        }
+        .liked-container {
+            padding: 20px;
+        }
+        .liked-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .liked-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .item {
+            background-color: #42077a;
+            padding: 10px;
+            border-radius: 10px;
+            width: 250px;
+        }
+        .item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .item-info {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="index.html" class="logo">MokeSell</a>
+        <div class="top-icons">
+            <a href="account.html"><img src="profile.png" alt="Profile"></a>
+            <a href="allchats.html"><img src="images\chaticon.jpg" alt="chat"></a>
+            <a href="liked.html"><img src="likes.png" alt="Likes"></a>
+            <a href="cart.html"><img src="shoppingcart.png" alt="Shopping Cart"></a>
+            <a href="createlisting.html" class="sell-button">Sell</a>
+        </div>
+    </div>
+    <div class="liked-container">
+        <div class="liked-title">Likes</div>
+        <div class="liked-items">
+            <div class="item">
+                <img src="bicycle.png" alt="Bicycle">
+                <div class="item-info">
+                    <strong>Brand New Bicycle</strong>
+                    <p>S$150</p>
+                    <p>Great condition, barely used</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="guitar.png" alt="Guitar">
+                <div class="item-info">
+                    <strong>Acoustic Guitar</strong>
+                    <p>S$150</p>
+                    <p>Excellent sound quality, includes carrying case</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="mug.png" alt="Mug">
+                <div class="item-info">
+                    <strong>Stylish Coffee Mug</strong>
+                    <p>S$10</p>
+                    <p>Ceramic, keeps drinks warm</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="microphone.png" alt="Microphone">
+                <div class="item-info">
+                    <strong>Studio Microphone</strong>
+                    <p>S$80</p>
+                    <p>Perfect for recording and streaming</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="headphones.png" alt="Headphones">
+                <div class="item-info">
+                    <strong>Wireless Headphones</strong>
+                    <p>S$120</p>
+                    <p>Noise cancelling, long battery life</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="backpack.png" alt="Backpack">
+                <div class="item-info">
+                    <strong>Travel Backpack</strong>
+                    <p>S$50</p>
+                    <p>Waterproof, durable material</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

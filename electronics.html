@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+        }
+        .top-bar {
+            width: 100%;
+            height: 60px;
+            background-color: #42077a;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-bottom: 2px solid white;
+        }
+        .logo {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        .top-icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-left: auto;
+            margin-right: 20px;
+        }
+        .top-icons img {
+            width: 24px;
+            height: 24px;
+        }
+        .sell-button {
+            background-color: white;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            margin-right:20px;
+        }
+        .electronics-container {
+            padding: 20px;
+        }
+        .electronics-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .electronics-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .item {
+            background-color: #42077a;
+            padding: 10px;
+            border-radius: 10px;
+            width: 250px;
+        }
+        .item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .item-info {
+            margin-top: 10px;
+        }
+            @media screen and (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+            .top-icons {
+                margin-top: 10px;
+                justify-content: center;
+            }
+            .electronics-items {
+                flex-direction: column;
+                align-items: center;
+            }
+            .item {
+                width: 90%;
+                max-width: 300px;
+            }
+            .sell-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+            @media screen and (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+                align-items: center;
+            }
+            .top-icons {
+                margin-top: 10px;
+                justify-content: center;
+            }
+            .electronics-items {
+                flex-direction: column;
+                align-items: center;
+            }
+            .item {
+                width: 90%;
+                max-width: 300px;
+            }
+            .sell-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+            @media screen and (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+                align-items: center;
+            }
+            .top-icons {
+                margin-top: 10px;
+                justify-content: center;
+            }
+            .electronics-items {
+                flex-direction: column;
+                align-items: center;
+            }
+            .item {
+                width: 90%;
+                max-width: 300px;
+            }
+            .sell-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+            @media screen and (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+                align-items: center;
+            }
+            .top-icons {
+                margin-top: 10px;
+                justify-content: center;
+            }
+            .electronics-items {
+                flex-direction: column;
+                align-items: center;
+            }
+            .item {
+                width: 90%;
+                max-width: 300px;
+            }
+            .sell-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+            @media screen and (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+                align-items: center;
+            }
+            .top-icons {
+                margin-top: 10px;
+                justify-content: center;
+            }
+            .electronics-items {
+                flex-direction: column;
+                align-items: center;
+            }
+            .item {
+                width: 90%;
+                max-width: 300px;
+            }
+            .sell-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+            @media screen and (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+                align-items: center;
+            }
+            .top-icons {
+                margin-top: 10px;
+                justify-content: center;
+            }
+            .electronics-items {
+                flex-direction: column;
+                align-items: center;
+            }
+            .item {
+                width: 90%;
+                max-width: 300px;
+            }
+            .sell-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+            @media screen and (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+                align-items: center;
+            }
+            .top-icons {
+                margin-top: 10px;
+                justify-content: center;
+            }
+            .electronics-items {
+                flex-direction: column;
+                align-items: center;
+            }
+            .item {
+                width: 90%;
+                max-width: 300px;
+            }
+            .sell-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+            @media screen and (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+                align-items: center;
+            }
+            .top-icons {
+                margin-top: 10px;
+                justify-content: center;
+            }
+            .electronics-items {
+                flex-direction: column;
+                align-items: center;
+            }
+            .item {
+                width: 90%;
+                max-width: 300px;
+            }
+            .sell-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="index.html" class="logo">MokeSell</a>
+        <div class="top-icons">
+            <a href="account.html"><img src="images\account.png" alt="Profile"></a>
+            <a href="allchats.html"><img src="images\chaticon.jpg" alt="chat"></a>
+            <a href="likes.html"><img src="images\likes.png" alt="Likes"></a>
+            <a href="cart.html"><img src="images\cart.png" alt="Shopping Cart"></a>
+            <a href="createlisting.html" class="sell-button">Sell</a>
+        </div>
+    </div>
+    <div class="electronics-container">
+        <div class="electronics-title">Electronics</div>
+        <div class="electronics-items">
+            <div class="item">
+                <img src="images/laptop.jpg" alt="Laptop">
+                <div class="item-info">
+                    <strong>Gaming Laptop</strong>
+                    <p>S$1200</p>
+                    <p>High-performance, perfect for gaming & work</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/smartphone.jpg" alt="Smartphone">
+                <div class="item-info">
+                    <strong>Flagship Smartphone</strong>
+                    <p>S$900</p>
+                    <p>Latest model, excellent camera quality</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/smartwatch.jpg" alt="Smartwatch">
+                <div class="item-info">
+                    <strong>Smartwatch</strong>
+                    <p>S$250</p>
+                    <p>Fitness tracking, notifications & more</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/earbuds.jpg" alt="Earbuds">
+                <div class="item-info">
+                    <strong>Wireless Earbuds</strong>
+                    <p>S$150</p>
+                    <p>Noise-cancelling, long battery life</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images\dslr camera.jpg" alt="Camera">
+                <div class="item-info">
+                    <strong>DSLR Camera</strong>
+                    <p>S$850</p>
+                    <p>Professional quality photography</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/tablet.jpg" alt="Tablet">
+                <div class="item-info">
+                    <strong>Tablet</strong>
+                    <p>S$500</p>
+                    <p>Perfect for work, reading & entertainment</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/keyboard.jpg" alt="Mechanical Keyboard">
+                <div class="item-info">
+                    <strong>Mechanical Keyboard</strong>
+                    <p>S$120</p>
+                    <p>RGB lighting, mechanical switches</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/monitor.jpg" alt="Gaming Monitor">
+                <div class="item-info">
+                    <strong>Gaming Monitor</strong>
+                    <p>S$600</p>
+                    <p>144Hz refresh rate, 4K resolution</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/router.jpg" alt="Wi-Fi Router">
+                <div class="item-info">
+                    <strong>High-Speed Wi-Fi Router</strong>
+                    <p>S$180</p>
+                    <p>Fast & reliable internet connection</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images\gaming headset.jpg" alt="Gaming Headset">
+                <div class="item-info">
+                    <strong>Gaming Headset</strong>
+                    <p>S$200</p>
+                    <p>Surround sound, noise cancellation</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images\speaker.jpg" alt="Bluetooth Speaker">
+                <div class="item-info">
+                    <strong>Bluetooth Speaker</strong>
+                    <p>S$80</p>
+                    <p>Portable, waterproof, deep bass</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images\vrheadset.jpg" alt="VR Headset">
+                <div class="item-info">
+                    <strong>VR Headset</strong>
+                    <p>S$350</p>
+                    <p>Immersive experience, high-resolution display</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

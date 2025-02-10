@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Inbox</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .top-bar {
+            width: 100%;
+            height: 60px;
+            background-color: #42077a;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-bottom: 2px solid white;
+        }
+        .logo {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        .top-icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-left: auto;
+            margin-right: 20px;
+        }
+        .top-icons img {
+            width: 24px;
+            height: 24px;
+        }
+        .sell-button {
+            background-color: white;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+        .chat-container {
+            display: flex;
+            flex-grow: 1;
+        }
+        .chat-list {
+            width: 30%;
+            background-color: #42077a;
+            padding: 20px;
+            border-right: 2px solid white;
+            overflow-y: auto;
+        }
+        .chat-item {
+            padding: 15px;
+            background-color: #847d7d;
+            margin-top: 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+        }
+        .chat-item:hover {
+            background-color: #42077a;
+        }
+        .chat-item img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .chat-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .chat-header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .chat-messages {
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+        .message {
+            background-color: #42077a;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            max-width: 60%;
+            color: white;
+        }
+        .message.sent {
+            background-color: #e6e6e6;
+            color: black;
+            align-self: flex-end;
+        }
+        .message.received {
+            background-color: #42077a;
+            align-self: flex-start;
+        }
+        .input-box {
+            padding: 10px;
+            border-top: 2px solid white;
+            display: flex;
+        }
+        .input-box input {
+            flex-grow: 1;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #42077a;
+            color: white;
+        }
+        .input-box button {
+            padding: 10px 15px;
+            margin-left: 10px;
+            border: none;
+            background-color: white;
+            color: #42077a;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="index.html" class="logo" style="text-decoration: none;">MokeSell</a>
+        <div class="top-icons">
+            <a href="account.html"><img src="profile.png" alt="Profile"></a>
+            <a href="allchats.html"><img src="images\chaticon.jpg" alt="chat"></a>
+            <a href="liked.html"><img src="likes.png" alt="Likes"></a>
+            <a href="cart.html"><img src="shoppingcart.png" alt="Shopping Cart"></a>
+            <a href="createlisting.html" class="sell-button">Sell</a>
+        </div>
+    </div>
+    <div class="chat-container">
+        <div class="chat-list">
+            <div class="chat-item" onclick="loadChat()">
+                <img src="ps4controller.png" alt="Profile">
+                <span>ps4controllershub</span>
+            </div>
+        </div>
+        <div class="chat-content">
+            <div class="chat-header">ps4controllershub</div>
+            <div class="chat-messages">
+                <div class="message received">So sorry, I'm sick today.</div>
+                <div class="message received">Are you able to meet at Sembawang MRT instead?</div>
+                <div class="message sent">That's fine, but Sembawang is really far for me. Are you free on Monday/Tuesday/Wednesday at Clementi MRT?</div>
+                <div class="message received">I couldn't go to work today.</div>
+                <div class="message received">Monday I can.</div>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Type your message here...">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
